@@ -49,7 +49,7 @@ export class EditServerComponent implements OnInit, CanComponentDeactivate{
     this.router.navigate(['../'], { relativeTo: this.route });
   }
 
-  canDeactivate(): Observable<boolean> | Promise<boolean> | boolean {
+  canDeactivate(): any {
     if (!this.allowEdit) {
       return true;
     }
